@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollFlowLayoutCell" id="gTV-IL-0wX" customClass="CollFlowLayoutCell" customModule="LoginScreens" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="237" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="237" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Gm-In-2jg">
+                        <rect key="frame" x="0.0" y="0.0" width="237" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vS2-Qu-RPc">
+                                <rect key="frame" x="40" y="10" width="187" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bagimage4" translatesAutoresizingMaskIntoConstraints="NO" id="sm7-EJ-Jqb">
+                                <rect key="frame" x="10" y="27.666666666666671" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7ts-SA-fmp"/>
+                                    <constraint firstAttribute="width" constant="20" id="BSf-gj-zAz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="vS2-Qu-RPc" firstAttribute="top" secondItem="1Gm-In-2jg" secondAttribute="top" constant="10" id="4xg-Tv-0Ql"/>
+                            <constraint firstAttribute="trailing" secondItem="vS2-Qu-RPc" secondAttribute="trailing" constant="10" id="9dv-Jt-Red"/>
+                            <constraint firstAttribute="bottom" secondItem="vS2-Qu-RPc" secondAttribute="bottom" constant="10" id="HLw-vy-roS"/>
+                            <constraint firstItem="sm7-EJ-Jqb" firstAttribute="centerY" secondItem="1Gm-In-2jg" secondAttribute="centerY" id="d7u-Ft-a1F"/>
+                            <constraint firstItem="sm7-EJ-Jqb" firstAttribute="leading" secondItem="1Gm-In-2jg" secondAttribute="leading" constant="10" id="vLH-LA-6eM"/>
+                            <constraint firstItem="vS2-Qu-RPc" firstAttribute="leading" secondItem="sm7-EJ-Jqb" secondAttribute="trailing" constant="10" id="yhz-nG-7DW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1Gm-In-2jg" secondAttribute="trailing" id="KNd-Od-fhM"/>
+                <constraint firstAttribute="bottom" secondItem="1Gm-In-2jg" secondAttribute="bottom" id="YlR-ZS-MG5"/>
+                <constraint firstItem="1Gm-In-2jg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f7B-0i-W8I"/>
+                <constraint firstItem="1Gm-In-2jg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hvv-TO-Q1X"/>
+            </constraints>
+            <size key="customSize" width="237" height="75"/>
+            <connections>
+                <outlet property="lblTitle" destination="vS2-Qu-RPc" id="XDS-Yk-cNA"/>
+            </connections>
+            <point key="canvasLocation" x="130.53435114503816" y="28.52112676056338"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bagimage4" width="800" height="986"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
