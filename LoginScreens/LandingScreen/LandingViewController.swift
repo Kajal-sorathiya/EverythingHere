@@ -46,10 +46,13 @@ class LandingViewController: UIViewController {
     
     private func setupProgressBar() {
         images.forEach { _ in
+            print("MAde changes")
             let progressbar = UIProgressView(progressViewStyle: .bar)
             progressbar.trackTintColor = .black
             progressbar.progressTintColor = .brown
             progressbar.progress = 0
+            progressbar.layer.cornerRadius = 2
+            progressbar.clipsToBounds = true
             progressBarStackview.addArrangedSubview(progressbar)
         }
     }
